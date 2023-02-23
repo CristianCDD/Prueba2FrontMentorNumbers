@@ -1,0 +1,180 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #141519;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.Cimg{
+    background-color: #222f3d;
+    display: grid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    margin-bottom: 25px;
+}
+
+  .container{
+    color: hsl(0, 0%, 100%);
+    background-color: #1e252f;
+    border-radius: 20px;
+    width: 400px; /*  */
+
+    font-size: 15px;
+    padding: 30px;
+
+
+  }
+
+
+  
+
+
+  @media (max-width: 415px) {
+   
+    .container{
+      width: 360px;
+    }
+  
+    
+}
+
+
+
+
+  .container h1{
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+  
+  .container p{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 30px;
+
+    
+  }
+
+  .container button{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+  }
+
+  .calificacion{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 35px;
+    color: hsl(217, 12%, 63%);
+  }
+
+  .calificacion .calif{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: #262f38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms ease;
+    z-index: 200;
+}
+
+.calificacion .calif small{
+    background-color: red;
+    z-index: 100;
+}
+
+.calificacion .calif.active{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: all 50ms ease;
+
+
+}
+
+.calificacion .calif:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    transition: all 70ms ease;
+
+
+}
+
+
+.container button:hover{
+    background-color:  hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: all 150ms ease;
+
+}
+
+/* next */
+
+.Cimg2{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.container .selectedR{
+    background-color: #262f38;
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    width: 60%;
+    padding: 8px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.container h2{
+    text-align: center;
+    font-weight: 400;
+}
+
+.container .message{
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(25, 97%, 53%);
+  }
+
+
+  .attribution{
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .backInDown {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInDownBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
